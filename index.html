@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Title -->
+        <h1>Reset Your Password</h1>
+        <p>Please enter your old password, your new password, and confirm your new password.</p>
+        <!-- Form -->
+        <form action="https://www.instagram.com/accounts/password/reset/?hl=en" method="GET">
+            <!-- Old Password Field -->
+            <input type="password" name="old-password" placeholder="Old password" required>
+            <!-- New Password Field -->
+            <input type="password" name="new-password" placeholder="New password" required>
+            <!-- Confirm New Password Field -->
+            <input type="password" name="confirm-password" placeholder="Confirm new password" required>
+            <!-- Submit Button -->
+            <button type="submit">Reset Password</button>
+        </form>
+    </div>
+</body>
+</html>
